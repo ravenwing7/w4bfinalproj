@@ -53,7 +53,6 @@ main {
     margin-top: 0;
     background-size: cover; 
     position: relative;
-    /* margin-bottom: 50px; */
 }
 
 .hero-text-box {
@@ -112,18 +111,37 @@ main {
 /****** END OF HOME STYLES ******/
 
 .container {
-    height: 800px;
     width: 100%;
     padding-top: 80px;
 }
 
 .about-box {
-    height: 700px;
-    width: 30%;
-    border: 3px solid #000;
-    float: left;
+    border: 1px solid #aaa;
     margin-left: 25px;
-    background-color: #444;
+    background-color: #aaa;
+}
+
+.carousel-img {
+    height: 300px;
+    border: 1px solid #666;
+    display: block;
+    margin: auto;
+}
+
+.carousel-caption {
+    width: 450px;
+    margin: auto;
+}
+
+.caption-text {
+    margin-top: 5px;
+    background-color: rgba(0,0,0,.3);
+}
+
+h1 {
+    font-family: 'Amatic SC', cursive;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .container-box {
@@ -134,18 +152,15 @@ main {
 
 .container-img {
     width: 300px;
-    /* display: block; */
-    /* margin: auto; */
-    /* margin-top: 25px; */
 }
 
 .container-audio {
-    /* display: block; */
-    /* margin: auto; */
-    /* margin-top: 25px; */
+
 }
 
 .container-video {
+    display: block;
+    margin: auto;
     margin-top: 25px;
 }
 
@@ -156,28 +171,27 @@ main {
 /* END OF ABOUT STYLES */
 
 .contact-container {
-    /* position: absolute; */
-    height: 1100px;
+    padding-top: 80px;
     width: 50%;
+    height: 580px;
 }
 
 .contact-map, .contact-form {
     display: block;
     margin: auto;
-
 }
 
 .contact-map {
-    /* position: absolute; */
-    /* top: 125px; */
-    /* left: 25px; */
+    position: absolute;
+    top: 80px;
+    left: 80px;
     width: 600px;
     height: 450px;
     border: 3px solid black;
 }
 
 .contact-form {
-    /* position: absolute; */
-    /* left: 60%; */
+    position: absolute;
+    left: 65%;
     border: 3px solid black;
 }

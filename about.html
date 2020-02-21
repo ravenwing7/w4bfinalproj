@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Release the Wookiees</title>
+    <!--  -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!--  -->
     <script src="https://kit.fontawesome.com/e34cb5fbd9.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
@@ -27,18 +30,56 @@
 
     <section class="container">
         <div class="about-box">
-            <img class="container-img container-box" src="img/brickwall.jpg" alt="bricks">
+
+            <!-- carousel -->
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                </ul>
+              
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="carousel-img" src="img/toolin.jpg" alt="Screwing around">
+                    <div class="carousel-caption">
+                      <p class="caption-text">Friends fooling around with instruments we couldn't play</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="carousel-img" src="img/jam.jpg" alt="Jam session">
+                    <div class="carousel-caption">
+                      <p class="caption-text">Early jam session with guitarist Troy and vocalist Sean, with sound tech Craig behind the camera</p>
+                    </div>
+                  </div>
+                </div>
+              
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+              <!-- CAROUSEL -->
+
+            <h1>Band History</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolor aut reiciendis perspiciatis veritatis corrupti, rem pariatur illum molestiae itaque facere. Nihil commodi ipsam nesciunt reiciendis vitae atque ad, ipsa fuga. Provident dolorum maxime quisquam asperiores harum culpa hic ut, fugit magnam, numquam perspiciatis minus beatae, dolore sint sequi exercitationem repudiandae. Consequatur quas labore dicta numquam aliquam laborum in deleniti hic facere quisquam animi recusandae, delectus corrupti cumque doloremque nobis officiis veritatis soluta commodi expedita exercitationem laboriosam possimus tenetur illo. Hic, blanditiis a quaerat error sint iste asperiores nihil eveniet recusandae possimus? Cumque officiis natus repudiandae debitis maxime, temporibus doloremque.
             </p>
         </div>
         <div class="about-box">
+            <h1>Music and Sound</h1>
             <audio class="container-audio container-box" controls src="audio/Lightsaber.wav" alt="Your browser does not support this audio file"></audio>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolor aut reiciendis perspiciatis veritatis corrupti, rem pariatur illum molestiae itaque facere. Nihil commodi ipsam nesciunt reiciendis vitae atque ad, ipsa fuga. Provident dolorum maxime quisquam asperiores harum culpa hic ut, fugit magnam, numquam perspiciatis minus beatae, dolore sint sequi exercitationem repudiandae. Consequatur quas labore dicta numquam aliquam laborum in deleniti hic facere quisquam animi recusandae, delectus corrupti cumque doloremque nobis officiis veritatis soluta commodi expedita exercitationem laboriosam possimus tenetur illo. Hic, blanditiis a quaerat error sint iste asperiores nihil eveniet recusandae possimus? Cumque officiis natus repudiandae debitis maxime, temporibus doloremque.            </p>
         </div>
         <div class="about-box">
-            <iframe class="container-video" width="100%" height="315" src="https://www.youtube.com/embed/-JZ_moituIo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="container-video" width="560" height="315" src="https://www.youtube.com/embed/b6TCsEeCr1Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h1>Why "Release the Wookiees"?</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolor aut reiciendis perspiciatis veritatis corrupti, rem pariatur illum molestiae itaque facere. Nihil commodi ipsam nesciunt reiciendis vitae atque ad, ipsa fuga. Provident dolorum maxime quisquam asperiores harum culpa hic ut, fugit magnam, numquam perspiciatis minus beatae, dolore sint sequi exercitationem repudiandae. Consequatur quas labore dicta numquam aliquam laborum in deleniti hic facere quisquam animi recusandae, delectus corrupti cumque doloremque nobis officiis veritatis soluta commodi expedita exercitationem laboriosam possimus tenetur illo. Hic, blanditiis a quaerat error sint iste asperiores nihil eveniet recusandae possimus? Cumque officiis natus repudiandae debitis maxime, temporibus doloremque.            </p>
         </div>
@@ -51,13 +92,17 @@
         </div>
         <div class="social">
             <a href="https://www.facebook.com/profile.php?id=646127976" target="_blank"><i class="fab fa-facebook-square"></i></a>
-<!-- FIX THESE LINKS -->
             <i class="fab fa-instagram"></i>
             <i class="fab fa-linkedin"></i>
         </div>
         <div class="copy">
-            <p>&copy; Sean Duffy. All Lights Reversed. 2020</p>
+            <p>&copy; Sean Duffy. All Rights Reserved. 2020</p>
         </div>
     </footer>
+    <!--  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!--  -->
 </body>
 </html>
